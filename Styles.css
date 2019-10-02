@@ -1,0 +1,32 @@
+
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+	background-color: coral;
+	margin: 0%;
+}
+h1{
+}
+#title{
+	margin: 2%;
+	margin-left: 0%;
+	float: left;
+}
+#header{
+	padding: 3%;
+	background-color: white;
+	border-radius: 5px 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	
+}
+#links{
+	float: left; 
+	margin: 0%; 
+	padding: 2.15%; 
+	font-size: 150%;
+	transition: background-color .75s;
+	
+}
+#links:hover{
+	background-color: rgb(240,240,240);
+}
