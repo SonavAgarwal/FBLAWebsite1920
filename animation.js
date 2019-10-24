@@ -1,6 +1,6 @@
 function destroy() {
     console.log("destroying");
-    setTimeout(kaBoom, 2900);
+    setTimeout(kaBoom, 980);
 }
 
 function kaBoom() {
