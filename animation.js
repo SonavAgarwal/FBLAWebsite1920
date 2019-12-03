@@ -1,6 +1,5 @@
 
 function destroy() {
-    setInterval(change,3000);
     console.log("destroying");
     setTimeout(kaBoom, 980);
 }
@@ -8,6 +7,7 @@ function destroy() {
 function kaBoom() {
     document.getElementById("intro").style.display = "none";
     console.log("destroyed")
+    setInterval(change,5000);
 }
 
 
