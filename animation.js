@@ -1,29 +1,30 @@
-var airplane = createSprite("airplane",300,50,50,50);
-setInterval(takeOff,10);
-var x = 0;
-var y = 0;
-var d = 180;
 
-function takeOff(){
-	airplane.x = Math.sin(d)*500+250;
-	airplane.y = Math.cos(d)*50;
-	d=d-.05;
-	setPosition(airplane);
+function destroy() {
+    console.log("destroying");
+    setTimeout(kaBoom, 980);
+}
+
+function kaBoom() {
+    document.getElementById("intro").style.display = "none";
+    console.log("destroyed")
+    setInterval(change,5000);
 }
 
 
-function createSprite(name, x, y, w, h){
-    var sprite = new Object()
-    sprite.id = name;
-    sprite.x = x;
-    sprite.y = y;
-    sprite.w = w;
-    sprite.h = h;
-    return sprite;
-}
+function change(){
+    if(document.getElementById("slideshow3").className == "appear"){
+        console.log("test");
+        document.getElementById("slideshow3").className = "fade";
+        document.getElementById("slideshow1").className = "appear";
+    }else if(document.getElementById("slideshow2").className == "appear"){
+        console.log("test");
 
-function setPosition(sprite){
-    var e = document.getElementById(sprite.id);
-    e.style.left = sprite.x+'px';
-    e.style.top = sprite.y + 'px';
+        document.getElementById("slideshow2").className = "fade";
+        document.getElementById("slideshow3").className = "appear";
+    }else if(document.getElementById("slideshow1").className == "appear"){
+        console.log("test");
+
+        document.getElementById("slideshow1").className = "fade";
+        document.getElementById("slideshow2").className = "appear";
+    }
 }

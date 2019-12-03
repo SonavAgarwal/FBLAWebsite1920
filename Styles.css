@@ -8,12 +8,12 @@ h1{
 }
 #title{
 	margin: 2%;
-	margin-left: 0%;
+	margin-left: -.5%;
 	float: left;
 }
 #header{
 	padding: 3%;
-	background-color: white;
+	background-color: rgb(255,255,255);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -33,4 +33,73 @@ h1{
 }
 #airplane{
 	position: absolute;
+}
+
+#intro {
+	position: absolute;
+	z-index: 5;
+	height: 100vh;
+	width: auto;
+	left: -100vw;
+	animation: slide 1s ease-in-out 0s 1;
+}
+@keyframes slide {
+	from {left: -100vw;}
+	to {left: 100vw;display: none;}
+}
+
+#wrapper{
+	width: 33%;
+	background-color: white;
+	overflow: hidden;
+	margin-right: 10%;
+}
+
+.fade{
+	width: 100%;
+	animation: fade 2s;
+	-webkit-animation: fade 2s;
+	border-radius: 5px 5px 5px;
+	top: 0%;
+	left: -100%;
+}
+.appear{
+	width: 100%;
+	animation: appear 2s;
+	-webkit-animation: appear 2s;
+	border-radius: 5px 5px 5px;
+	top: 0%;
+	left: 0%;
+}
+
+#slideshow1{	
+	position: absolute;
+	z-index: -1;
+
+}
+#slideshow2{
+	position: absolute;
+	z-index: -2;
+}
+#slideshow3{
+	position: absolute;
+	z-index: -3;
+
+}
+@keyframes fade{
+	0%{left: 0%;}
+	100%{left: -100%;}
+}
+@keyframes appear{
+	0%{left: 100%;}
+	100%{left: 0%;}
+}
+
+@-webkit-keyframes appear{
+	0%{left: 100%;}
+	100%{left: 0%;}
+}
+@-webkit-keyframes fade{
+	0%{left: 0%;}
+	100%{left: -100%;}
 }
