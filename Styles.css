@@ -10,6 +10,7 @@ h1{
 	margin: 2%;
 	margin-left: 0%;
 	float: left;
+	opacity: .25;
 }
 #header{
 	padding: 3%;
@@ -26,6 +27,7 @@ h1{
 	padding: 2.15%; 
 	font-size: 150%;
 	transition: background-color .75s;
+	opacity: .25;
 	
 }
 #links:hover{
@@ -37,6 +39,7 @@ h1{
 
 #intro {
 	position: absolute;
+	z-index: 5;
 	height: 100vh;
 	width: auto;
 	left: -100vw;
@@ -45,4 +48,72 @@ h1{
 @keyframes slide {
 	from {left: -100vw;}
 	to {left: 100vw;display: none;}
+}
+
+#wrapper{
+	width: 33%;
+	background-color: white;
+	overflow: hidden;
+	margin-right: 10%;
+}
+
+.fade{
+	width: 45%;
+	animation: fade 1s;
+	-webkit-animation: fade 1s;
+	opacity: 0;
+	border-radius: 5px 5px 5px;
+}
+.appear{
+	width: 45%;
+	animation: appear 1s;
+	-webkit-animation: appear 1s;
+	opacity: 1;
+	border-radius: 5px 5px 5px;
+}
+
+#slideshow1{	
+	position: absolute;
+	top: 15%;
+	z-index: 0;
+	left: 30%;
+
+}
+#slideshow2{
+	position: absolute;
+	top: 15%;
+	z-index: 1;
+	left: 30%;
+}
+#slideshow3{
+	position: absolute;
+	top: 15%;
+	z-index: 2;
+	left: 30%;
+
+}
+@keyframes fade{
+	0%{opacity: 1; z-index: 2;}
+	90%{opacity: 0;
+	z-index: 2;}
+	100%{z-index: 0; opacity: 0;}
+}
+@keyframes appear{
+	0%{opacity: 0; z-index: 0;}
+	90%{opacity: 1;
+	z-index: 0;}
+	100%{z-index: 2;}
+}
+
+@-webkit-keyframes appear{
+	0%{opacity: 0; z-index: 0;}
+	90%{opacity: 1;
+	z-index: 0;}
+	100%{z-index: 2;}
+}
+@-webkit-keyframes fade{
+	0%{opacity: 1; z-index: 2;}
+	90%{opacity: 0;
+	z-index: 2;}
+	100%{z-index: 0; opacity: 0;}
 }
