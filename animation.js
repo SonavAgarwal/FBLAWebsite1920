@@ -7,7 +7,7 @@ function destroy() {
 function kaBoom() {
     document.getElementById("intro").style.display = "none";
     console.log("destroyed")
-    setInterval(change,5000);
+    setInterval(change,7000);
 }
 
 
