@@ -7,9 +7,13 @@ function destroy() {
 function kaBoom() {
     document.getElementById("intro").style.display = "none";
     console.log("destroyed")
-    setInterval(change,7000);
+    setTimeout(start,500);
+
 }
 
+function start(){
+    setInterval(change,7000);
+}
 
 function change(){
     if(document.getElementById("slideshow3").className == "appear"){

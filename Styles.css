@@ -1,22 +1,26 @@
 
 body{
 	font-family: 'Nanum Gothic', sans-serif;
-	background-color: coral;
+	background-color: rgb(240,240,240);
 	margin: 0%;
 }
 h1{
 }
 #title{
 	margin: 2%;
+	margin-bottom: 0%;
 	margin-left: -.5%;
 	float: left;
 }
 #header{
-	padding: 3%;
+	/* padding: 3%; */
 	background-color: rgb(255,255,255);
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: fixed;
+	top: 0%;
+	width: 100%;
 
 	
 }
@@ -42,6 +46,7 @@ h1{
 	width: auto;
 	left: -100vw;
 	animation: slide 1s ease-in-out 0s 1;
+	top: 0%;
 }
 @keyframes slide {
 	from {left: -100vw;}
@@ -57,16 +62,16 @@ h1{
 
 .fade{
 	width: 100%;
-	animation: fade 2s;
-	-webkit-animation: fade 2s;
+	animation: fade 1s;
+	-webkit-animation: fade 1s;
 	border-radius: 5px 5px 5px;
 	top: 0%;
 	left: -100%;
 }
 .appear{
 	width: 100%;
-	animation: appear 2s;
-	-webkit-animation: appear 2s;
+	animation: appear 1s;
+	-webkit-animation: appear 1s;
 	border-radius: 5px 5px 5px;
 	top: 0%;
 	left: 0%;
@@ -102,4 +107,19 @@ h1{
 @-webkit-keyframes fade{
 	0%{left: 0%;}
 	100%{left: -100%;}
+}
+
+.actions{
+	font-size: 200%;
+	text-align: center;
+	margin: 0%;
+}
+.trackingbookingchecking{
+	float: left;
+	margin-left: 5%; 
+	width: 20%; 
+	padding:1%;
+	background-color: rgb(97, 188, 224);
+	border-radius: 5px 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
