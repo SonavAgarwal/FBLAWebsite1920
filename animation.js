@@ -12,23 +12,24 @@ function kaBoom() {
 }
 
 function start(){
-    setInterval(change,7000);
+    setInterval(change,5000);
 }
 
 function change(){
-    if(document.getElementById("slideshow3").className == "appear"){
+    console.log("hello");
+    if(document.getElementById("slideshow3").className == "appear slideshow"){
         console.log("test");
-        document.getElementById("slideshow3").className = "fade";
-        document.getElementById("slideshow1").className = "appear";
-    }else if(document.getElementById("slideshow2").className == "appear"){
-        console.log("test");
-
-        document.getElementById("slideshow2").className = "fade";
-        document.getElementById("slideshow3").className = "appear";
-    }else if(document.getElementById("slideshow1").className == "appear"){
+        document.getElementById("slideshow3").className = "fade slideshow";
+        document.getElementById("slideshow1").className = "appear slideshow";
+    }else if(document.getElementById("slideshow2").className == "appear slideshow"){
         console.log("test");
 
-        document.getElementById("slideshow1").className = "fade";
-        document.getElementById("slideshow2").className = "appear";
+        document.getElementById("slideshow2").className = "fade slideshow";
+        document.getElementById("slideshow3").className = "appear slideshow";
+    }else if(document.getElementById("slideshow1").className == "appear slideshow"){
+        console.log("test");
+
+        document.getElementById("slideshow1").className = "fade slideshow";
+        document.getElementById("slideshow2").className = "appear slideshow";
     }
 }
