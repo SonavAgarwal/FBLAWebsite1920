@@ -2,56 +2,61 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="Styles.css">
-	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="icon" href="">
 	<script src="animation.js" defer></script>
 </head>
 <body onload = "destroy()">
 	<img src = "Images/SuperLongPlanbe.svg" id = "intro">
 	<div id="header">
-		<img src="Images/AWAYlogo.png" style="float: left; width: 8%; margin-top: 1.55%; margin-left:1.5%;">
-		<h1 id="title"> Airlines</h1>
-		<a id="links">Info</a>
-		<a id="links">Booking</a>
-		<a id="links">Jobs</a>
+		<div style="width: 10%; float: left;padding: .825%;">
+			<img src="Images/AWAYlogo.png" id="introIcon">
+		</div>
+		<a class="links">
+			<div>Track Your Flight</div>
+		</a>
+		<a class="links">
+			<div>Book Your Flight</div>
+		</a>
+		<a class="links">
+			<div>Check-In</div>
+		</a>
 	</div>
 
-	<div style="height: 100vh;width: 100vw;">
-		<img src="Images/magazines.jpeg" id = "slideshow1" class="fade slideshow">
-		<img src = "Images/airplaneSlide.jpg"  id = "slideshow2" class="fade slideshow">
-		<img src = "Images/awayBrandedScenery.jpg" id = "slideshow3" class="appear slideshow">
-	</div>
+	<img src="Images/magazines.jpeg" id = "slideshow1" class="fade slideshow">
+	<img src = "Images/airplaneSlide.jpg"  id = "slideshow2" class="fade slideshow">
+	<img src = "Images/awayBrandedScenery.jpg" id = "slideshow3" class="appear slideshow">
 
 	
-	<div style="margin-top: 5%;"></div>
-
-	<div style="margin-top: 10%; overflow: hidden; margin-left: 35%;">
-		<img src="Images/AWAYlogo.png" style="float: left; width: 50%;margin-top: 2%;">
-		<h1 style="font-size: 430%; float: left; margin-top: 6%;">Airlines</h1>
+	<div style="margin-top: 17.5%;"></div>
+	<div id="slogan">
+		<img src="Images/awayflyaway.png" id = 'sloganImg'>
 	</div>
-	<div>
-		<h1 style="font-size: 200%; margin-top: 0%;margin-left: 40%;">Your way to get away</h1>
+	<div style="margin-top: 50%"></div>
+	<div style="margin-top: 7.5%;" id="containerForQuickActions">
+		<a>
+			<div class="trackingbookingchecking" style="margin-left: 12.5%;">
+				<img src="Images/FlightTracking.png" style="width: 85%; margin-left: 7.5%;">
+				<p class="actions">Track Your Flight</p>
+			</div>
+				
+		</a>
+			<div class="trackingbookingchecking" style="background-color: rgb(77,168,204);">
+				<img src="Images/PlanFlight.png" style="width: 85%; margin-left: 7.5%;">
+				<p class="actions">Book a Flight</p>
+			</div>
+		<a>
+			<div class="trackingbookingchecking">
+				<img src="Images/checkIn.png" style="width: 85%;margin-left: 7.5%;">
+				<p class="actions">Check-In</p>
+			</div>
+
+		</a>
 	</div>
 
-	<div style="margin-top: 7.5%;"></div>
+	<div style="margin-top: 50%;"></div>
 
-	<a>
-		<div class="trackingbookingchecking" style="margin-left: 12.5%;">
-			<img src="Images/FlightTracking.png" style="width: 85%; margin-left: 7.5%;">
-			<p class="actions">Track Your Flight</p>
-		</div>
-	</a>
-
-	<div class="trackingbookingchecking">
-		<img src="Images/PlanFlight.png" style="width: 85%; margin-left: 7.5%;">
-		<p class="actions">Book a Flight</p>
-	</div>
-	<a>
-		<div class="trackingbookingchecking">
-			<img src="Images/checkIn.png" style="width: 85%;margin-left: 7.5%;">
-			<p class="actions">Check-In</p>
-		</div>
-	</a>
+	
 	
 
 </body>

@@ -1,42 +1,39 @@
 
 body{
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	background-color: rgb(240,240,240);
 	margin: 0%;
 }
-h1{
-}
-#title{
-	margin: 2%;
-	margin-bottom: 0%;
-	margin-left: -.5%;
-	float: left;
-}
-#header{
-	/* padding: 3%; */
-	background-color: rgb(255,255,255);
-	border-bottom-right-radius: 5px;
-	border-bottom-left-radius: 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	position: fixed;
-	top: 0%;
-	width: 100%;
 
-	
-}
-#links{
-	float: left; 
-	margin: 0%; 
-	padding: 2.15%; 
-	font-size: 150%;
-	transition: background-color .75s;
-	
-}
-#links:hover{
-	background-color: rgb(240,240,240);
-}
+
+
 #airplane{
 	position: absolute;
+}
+
+#introIcon{
+	width: 100%;
+}
+
+#header{
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	top: 0%;
+}
+
+.links{
+	float: left;
+	padding: 2%;
+}
+#slogan{
+	width: 100%;
+	height: auto;
+	background-color: rgb(255, 255, 255, 0.3);
+}
+
+#sloganImg {
+	width: 100%;
 }
 
 #intro {
@@ -71,9 +68,15 @@ h1{
 }
 
 .slideshow{	
+	/* width: 100%; */
 	position: absolute;
 	z-index: -1;
-	object-fit: cover;
+	object-fit: cover !important;
+}
+
+#bob {
+	background-image: url(Images/magazines.jpeg);
+	background-size: cover;
 }
 
 
@@ -105,7 +108,11 @@ h1{
 	margin-left: 5%; 
 	width: 20%; 
 	padding:1%;
-	background-color: rgb(97, 188, 224);
-	border-radius: 5px 5px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: hidden;
+}
+
+#containerForQuickActions{
+	width: 100%;
+	background-color: rgb(77,168,204);
+	overflow: hidden;
 }
