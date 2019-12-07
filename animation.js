@@ -1,4 +1,41 @@
+var scrollTop = 0;
+var width = screen.width;
+setInterval(checkScroll,20);
 
+function checkScroll(){
+	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(scrollTop);
+    if(scrollTop>1700){
+        //console.log(document.getElementById("header").style.top);
+        document.getElementById("header").style.top = (1600-scrollTop)/3+"%";
+    }
+    if(scrollTop<1700){
+        document.getElementById("header").style.top = 0+"%";
+
+    }
+    if(scrollTop>1800){
+        console.log(document.getElementById("moveDiv1").style.zindex);
+        document.getElementById("moveDiv1").style.position = "fixed";
+        document.getElementById("moveDiv1").style.top = 0+"%";
+        document.getElementById("moveDiv1").style.zindex = 4;
+    }
+    if(scrollTop<1800){
+        document.getElementById("moveDiv1").style.position = "static";
+    }
+    if(scrollTop>2100 && scrollTop<2200){
+        document.getElementById("moveDiv2").style.position = "fixed";
+        document.getElementById("moveDiv2").style.top = 100+"%";
+        document.getElementById("moveDiv2").style.zindex = 5;
+
+    }
+    if(scrollTop>2200){
+        console.log(document.getElementById("moveDiv2").style.top)
+        document.getElementById("moveDiv2").style.top = 100-(scrollTop-2200)/3+"%";
+        if(parseFloat(document.getElementById("moveDiv2").style.top)<0){
+            document.getElementById("moveDiv2").style.top = 0+"%";
+        }
+    }
+}
 function destroy() {
     console.log("destroying");
     setTimeout(kaBoom, 980);
@@ -14,6 +51,8 @@ function kaBoom() {
 function start(){
     setInterval(change,5000);
 }
+
+
 
 function change(){
     console.log("hello");
@@ -32,4 +71,9 @@ function change(){
         document.getElementById("slideshow1").className = "fade slideshow";
         document.getElementById("slideshow2").className = "appear slideshow";
     }
+
+
+
+
+    
 }
