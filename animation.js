@@ -5,11 +5,12 @@ setInterval(checkScroll,20);
 function checkScroll(){
 	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     console.log(scrollTop);
-    if(scrollTop>1700){
+    document.getElementById("jj").innerHTML = screen.height;
+    if(scrollTop>1750){
         //console.log(document.getElementById("header").style.top);
-        document.getElementById("header").style.top = (1600-scrollTop)/3+"%";
+        document.getElementById("header").style.top = (1750-scrollTop)/3+"%";
     }
-    if(scrollTop<1700){
+    if(scrollTop<1750){
         document.getElementById("header").style.top = 0+"%";
 
     }
