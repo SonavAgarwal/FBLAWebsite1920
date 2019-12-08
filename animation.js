@@ -2,13 +2,16 @@ var scrollTop = 0;
 var width = screen.width;
 setInterval(checkScroll,20);
 
+var randomImage = ["Images/awaystressaway.png","Images/awayurway.png","Images/awayflyaway.png"];
+document.getElementById("sloganImg").src = randomImage[Math.floor((Math.random()*3))];
+
+
 function checkScroll(){
 	scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(scrollTop);
-    document.getElementById("jj").innerHTML = screen.height;
+    //console.log(scrollTop);
     if(scrollTop>1750){
         //console.log(document.getElementById("header").style.top);
-        document.getElementById("header").style.top = (1750-scrollTop)/3+"%";
+        document.getElementById("header").style.top = (1750-scrollTop)/5+"%";
     }
     if(scrollTop<1750){
         document.getElementById("header").style.top = 0+"%";
