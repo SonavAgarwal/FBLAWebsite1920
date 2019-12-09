@@ -12,7 +12,7 @@ body{
 }
 
 #introIcon{
-	width: 100%;
+	width: 150px;
 }
 
 #header{
@@ -24,7 +24,9 @@ body{
 
 .links{
 	float: left;
-	padding: 2%;
+	padding: .825%;
+	width: 150px;
+	height: 67px;
 }
 #slogan{
 	width: 100%;

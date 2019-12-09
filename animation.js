@@ -35,6 +35,7 @@ function checkScroll(){
     if(scrollTop>2200){
         console.log(document.getElementById("moveDiv2").style.top)
         document.getElementById("moveDiv2").style.top = 100-(scrollTop-2200)/3+"%";
+        document.getElementById("moveDiv1").style.top = -(scrollTop-2200)/3+"%";
         if(parseFloat(document.getElementById("moveDiv2").style.top)<0){
             document.getElementById("moveDiv2").style.top = 0+"%";
         }
